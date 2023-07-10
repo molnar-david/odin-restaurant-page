@@ -26,6 +26,8 @@ function createMenuItem(name, price, description) {
 
 export default function loadMenuPage() {
     const content = document.getElementById('content');
+    content.textContent = '';
+
     const menu = document.createElement('div');
 
     const pizza = createMenuItemGroup('Pizza');

@@ -1,5 +1,7 @@
 export default function loadHomePage() {
     const content = document.getElementById('content');
+    content.textContent = '';
+    
     const home = document.createElement('div');
 
     const introduction = document.createElement('h2');

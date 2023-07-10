@@ -8,8 +8,11 @@ export default function loadHeader() {
 
     const homeTab = document.createElement('button');
     homeTab.textContent = 'Home';
+
     const menuTab = document.createElement('button');
     menuTab.textContent = 'Menu';
+
+
     const contactTab = document.createElement('button');
     contactTab.textContent = 'Contact';
     tabs.append(homeTab, menuTab, contactTab);

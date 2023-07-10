@@ -1,5 +1,7 @@
 export default function loadContactPage() {
     const content = document.getElementById('content');
+    content.textContent = '';
+    
     const contact = document.createElement('div');
 
     const tel = document.createElement('p');
