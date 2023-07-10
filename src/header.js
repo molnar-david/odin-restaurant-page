@@ -4,13 +4,13 @@ export default function loadHeader() {
     const restaurantName = document.createElement('h1');
     restaurantName.textContent = 'Nonfalso';
 
-    const tabs = document.createElement('ul');
+    const tabs = document.createElement('div');
 
-    const homeTab = document.createElement('li');
+    const homeTab = document.createElement('button');
     homeTab.textContent = 'Home';
-    const menuTab = document.createElement('li');
+    const menuTab = document.createElement('button');
     menuTab.textContent = 'Menu';
-    const contactTab = document.createElement('li');
+    const contactTab = document.createElement('button');
     contactTab.textContent = 'Contact';
     tabs.append(homeTab, menuTab, contactTab);
 
