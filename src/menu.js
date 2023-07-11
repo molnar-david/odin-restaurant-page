@@ -28,6 +28,15 @@ export default function loadMenuPage() {
     const content = document.getElementById('content');
     content.textContent = '';
 
+    const btns = document.getElementsByTagName('button');
+    for (const btn of btns) {
+        if (btn.textContent === 'Menu') {
+            btn.classList.add('active');
+        } else {
+            btn. classList.remove('active');
+        }
+    }
+
     const menu = document.createElement('div');
 
     const pizza = createMenuItemGroup('Pizza');
@@ -68,7 +77,7 @@ export default function loadMenuPage() {
         createMenuItem(
             "Espresso",
             '$5 - $7',
-            'black, with sugar and/or organic milk'
+            'black / with sugar and/or organic milk'
         ),
     );
 

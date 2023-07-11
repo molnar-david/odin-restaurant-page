@@ -5,9 +5,11 @@ export default function loadHeader() {
     restaurantName.textContent = 'Nonfalso';
 
     const tabs = document.createElement('div');
+    tabs.setAttribute('id', 'tabs');
 
     const homeTab = document.createElement('button');
     homeTab.textContent = 'Home';
+    homeTab.classList.add('active');
 
     const menuTab = document.createElement('button');
     menuTab.textContent = 'Menu';

@@ -6,18 +6,18 @@ import loadContactPage from './contact.js';
 loadHeader();
 loadHomePage();
 
-const buttons = document.getElementsByTagName('button');
-for (const button of buttons) {
-    switch (button.textContent) {
+const btns = document.getElementsByTagName('button');
+for (const btn of btns) {
+    switch (btn.textContent) {
         case 'Home':
         default:
-            button.addEventListener('click', loadHomePage);
+            btn.addEventListener('click', loadHomePage);
             break;
         case 'Menu':
-            button.addEventListener('click', loadMenuPage);
+            btn.addEventListener('click', loadMenuPage);
             break;
         case 'Contact':
-            button.addEventListener('click', loadContactPage);
+            btn.addEventListener('click', loadContactPage);
             break;
     }
 }

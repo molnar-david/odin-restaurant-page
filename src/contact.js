@@ -1,7 +1,16 @@
 export default function loadContactPage() {
     const content = document.getElementById('content');
     content.textContent = '';
-    
+
+    const btns = document.getElementsByTagName('button');
+    for (const btn of btns) {
+        if (btn.textContent === 'Contact') {
+            btn.classList.add('active');
+        } else {
+            btn. classList.remove('active');
+        }
+    }
+
     const contact = document.createElement('div');
 
     const tel = document.createElement('p');

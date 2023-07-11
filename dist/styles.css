@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Tangerine";
+    src: url("../src/assets/fonts/Tangerine-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../src/assets/fonts/Roboto-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: rgb(240, 240, 240);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: center/cover url("../src/assets/images/pizza.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+#header {
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "Tangerine";
+    font-size: 3rem;
+    letter-spacing: 0.24rem;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tabs {
+    display: flex;
+    gap: 24px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+    font-size: 1.4rem;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+button:hover {
+    border-bottom: 1px solid rgb(155, 155, 155);
+    margin-bottom: -1px;
+}
+
+.active,
+.active:hover {
+    border-bottom: 1px solid rgb(240, 240, 240);
+    margin-bottom: -1px;
+}
