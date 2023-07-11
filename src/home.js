@@ -12,10 +12,18 @@ export default function loadHomePage() {
     }
 
     const home = document.createElement('div');
+    home.setAttribute('id', 'home');
 
-    const introduction = document.createElement('h2');
+    const restaurantName = document.createElement('h2');
+    restaurantName.textContent = 'Nonfalso';
+
+    const introduction = document.createElement('h3');
     introduction.textContent = "The world's No. 1 (non-fake!) Italian restaurant and pizzeria";
 
-    home.appendChild(introduction);
+    const menuBtn = document.createElement('button');
+    menuBtn.textContent = 'Our Menu';
+    menuBtn.classList.add('home-btn');
+
+    home.append(restaurantName, introduction, menuBtn);
     content.appendChild(home);
 }

@@ -1,7 +1,7 @@
 function createMenuItemGroup(heading) {
     const menuItemGroup = document.createElement('div');
 
-    const menuItemGroupHeading = document.createElement('h2');
+    const menuItemGroupHeading = document.createElement('h3');
     menuItemGroupHeading.textContent = heading;
 
     menuItemGroup.appendChild(menuItemGroupHeading);
@@ -11,7 +11,7 @@ function createMenuItemGroup(heading) {
 function createMenuItem(name, price, description) {
     const menuItem = document.createElement('div');
 
-    const menuItemName = document.createElement('h3');
+    const menuItemName = document.createElement('h4');
     menuItemName.textContent = name;
 
     const menuItemPrice = document.createElement('p');

@@ -9,15 +9,17 @@ export default function loadHeader() {
 
     const homeTab = document.createElement('button');
     homeTab.textContent = 'Home';
+    homeTab.classList.add('header-btn');
     homeTab.classList.add('active');
 
     const menuTab = document.createElement('button');
     menuTab.textContent = 'Menu';
-
+    menuTab.classList.add('header-btn');
 
     const contactTab = document.createElement('button');
+    contactTab.classList.add('header-btn');
     contactTab.textContent = 'Contact';
-    tabs.append(homeTab, menuTab, contactTab);
 
+    tabs.append(homeTab, menuTab, contactTab);
     header.append(restaurantName, tabs);
 }

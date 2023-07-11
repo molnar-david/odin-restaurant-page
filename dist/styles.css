@@ -18,6 +18,13 @@
     font-weight: 300;
 }
 
+@font-face {
+    font-family: "Oxygen";
+    src: url("../src/assets/fonts/Oxygen-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +44,7 @@ body {
     align-items: center;
     font-family: "Roboto";
     font-weight: 400;
+    gap: 40px;
 }
 
 #header {
@@ -59,7 +67,7 @@ body {
     gap: 24px;
 }
 
-button {
+.header-btn {
     background: none;
     border: none;
     cursor: pointer;
@@ -69,13 +77,50 @@ button {
     font-weight: 300;
 }
 
-button:hover {
+.header-btn:hover {
     border-bottom: 1px solid rgb(155, 155, 155);
     margin-bottom: -1px;
 }
 
-.active,
-.active:hover {
+.header-btn.active,
+.header-btn.active:hover {
     border-bottom: 1px solid rgb(240, 240, 240);
     margin-bottom: -1px;
+}
+
+/* #content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 70vw;
+} */
+
+#home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.home-btn {
+    font-family: "Oxygen";
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: firebrick;
+    background-color: rgb(240, 240, 240);
+    border: 4px solid green;
+    border-radius: 24px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Tangerine";
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
 }
