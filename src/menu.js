@@ -1,5 +1,6 @@
 function createMenuItemGroup(heading) {
     const menuItemGroup = document.createElement('div');
+    menuItemGroup.classList.add('menu-item-group');
 
     const menuItemGroupHeading = document.createElement('h3');
     menuItemGroupHeading.textContent = heading;
@@ -10,12 +11,14 @@ function createMenuItemGroup(heading) {
 
 function createMenuItem(name, price, description) {
     const menuItem = document.createElement('div');
+    menuItem.classList.add('menu-item');
 
     const menuItemName = document.createElement('h4');
     menuItemName.textContent = name;
 
     const menuItemPrice = document.createElement('p');
     menuItemPrice.textContent = price;
+    menuItemPrice.classList.add('right');
 
     const menuItemDescription = document.createElement('p');
     menuItemDescription.textContent = description;
@@ -38,6 +41,7 @@ export default function loadMenuPage() {
     }
 
     const menu = document.createElement('div');
+    menu.setAttribute('id', 'menu');
 
     const pizza = createMenuItemGroup('Pizza');
     pizza.append(

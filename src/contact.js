@@ -12,6 +12,7 @@ export default function loadContactPage() {
     }
 
     const contact = document.createElement('div');
+    contact.setAttribute('id', 'contact');
 
     const tel = document.createElement('p');
     tel.textContent = 'Tel: 123 456 789';
