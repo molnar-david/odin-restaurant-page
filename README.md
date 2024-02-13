@@ -1,5 +1,5 @@
 # odin-restaurant-page
-Demonstration at: https://molnar-david.github.io/odin-restaurant-page/
+GitHub Pages: https://molnar-david.github.io/odin-restaurant-page/
 
 Tabbed restaurant page, made using npm and webpack.
 
